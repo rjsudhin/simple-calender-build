@@ -94,7 +94,6 @@ main {
 }
 
 .container .top-content .right-side-content {
-  border: 1px solid ;
   display: flex;
   gap: 1rem;
   align-items: center;
