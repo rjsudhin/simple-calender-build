@@ -43,7 +43,7 @@ function gettingCurrentMonth(count) {
     return option.value != ''
   }
 
-  months[count]
+  months[count].selected = true
   
   console.log(months[count])
   return months[count].textContent
