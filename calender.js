@@ -15,7 +15,7 @@ select.addEventListener('change', () => {
 
 // updating the currentMonth
 function updateCalender(month) {
-  let days = 31
+  let days = checkingMonthsDays(month)
   
   // clear the previous month
   calender.innerHTML = ''
@@ -43,4 +43,26 @@ function gettingCurrentMonth(count) {
   }
   console.log(months[count])
   return months[count].textContent
+}
+
+// checking how many days in each month 
+function checkingMonthsDays(month) {
+  let day = ''
+  switch (month) {
+    case 'november':
+    case 'april':
+    case 'june':
+    case 'september':
+      day = 30
+      break
+    
+    case 'february':
+      day = 28
+      break
+    
+    default:
+      day = 31
+      break
+  }
+  return day
 }
