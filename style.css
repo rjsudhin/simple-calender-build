@@ -11,13 +11,15 @@
   --calender-bg: #44475a; 
   --days: #FF79C6;
   --btn: #BD93F9;
+  --text: #eee;
 }
 
 :root.light {
   --full-background: #F8F8F2;
   --calender-bg: #ccc;
   --days: #FF79C6;
-  --btn: #BD93F9; 
+  --btn: #BD93F9;
+  --text: #252525; 
 }
 
 html {
@@ -31,3 +33,40 @@ body {
   min-height: 100vh;
   background-color: var(--full-background);
 }
+
+/* for all container */
+.container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+/* for all container */
+
+/* header section */
+header {
+  padding: 1.5rem;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .logo {
+  font-weight: bold;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+
+.container #theme-switching-btn {
+  color: var(--btn);
+}
+
+.container .logo,
+.container #theme-switching-btn {
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+}
+/* header section */
