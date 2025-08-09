@@ -88,6 +88,7 @@ main {
 .top-content .left-side-content .month-title {
   color: var(--btn);
   font-weight: bold;
+  text-transform: capitalize;
   font-size: clamp(1.3rem, 2vw, 1.5rem);
 }
 

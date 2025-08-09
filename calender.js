@@ -16,7 +16,9 @@ select.addEventListener('change', () => {
 // updating the currentMonth
 function updateCalender(month) {
   let days = 31
-
+  
+  // clear the previous month
+  calender.innerHTML = ''
   // add the title of heading
   monthTitle.textContent = month
   // creating of days with selected month
