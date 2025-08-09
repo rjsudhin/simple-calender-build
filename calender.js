@@ -21,6 +21,7 @@ function updateCalender(month) {
   calender.innerHTML = ''
   // add the title of heading
   monthTitle.textContent = month
+  
   // creating of days with selected month
   for (let i = 1; i <= days; i++) {
     let li = document.createElement('li')
@@ -41,6 +42,9 @@ function gettingCurrentMonth(count) {
   function gettingOnlyMonths(option) {
     return option.value != ''
   }
+
+  months[count]
+  
   console.log(months[count])
   return months[count].textContent
 }
