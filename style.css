@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root.dark {
+  --full-background: #282a36;
+  --calender-bg: #44475a; 
+  --days: #FF79C6;
+  --btn: #BD93F9;
+}
+
+:root.light {
+  --full-background: #F8F8F2;
+  --calender-bg: #ccc;
+  --days: #FF79C6;
+  --btn: #BD93F9;
+}
+
+html {
+  font-family: 'Google Sans Code';
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--full-background);
+}
