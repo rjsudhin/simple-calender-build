@@ -70,3 +70,68 @@ header .container {
   font-size: clamp(1.1rem, 2vw, 1.6rem);
 }
 /* header section */
+
+
+/* main section */
+main {
+  padding: 1.5rem;
+}
+
+.container .top-content {
+  max-width: 650px;
+  margin: 1rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-content .left-side-content .month-title {
+  color: var(--btn);
+  font-weight: bold;
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
+}
+
+.container .top-content .right-side-content {
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.right-side-content label {
+  color: var(--btn);
+  font-size: clamp(.9rem, 3vw, 1.2rem);
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.right-side-content select {
+  background-color: var(--calender-bg);
+  border: none;
+  padding: .5rem 1rem;
+  color: var(--text);
+  border-radius: .5rem;
+}
+
+
+#calender {
+  background-color: var(--calender-bg);
+  width: 100%;
+  margin: 1rem auto;
+  max-width: 650px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+#calender li {
+  list-style: none;
+  text-align: center;
+  background-color: var(--days);
+  padding: 1rem 1.5rem;
+  border-radius: inherit;
+  color: var(--text)
+}
+/* main section */

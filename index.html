@@ -12,33 +12,42 @@
   
   <header>
     <div class="container">
-      <div class="logo">Calender</div>
+      <div class="logo">Day checking App</div>
       <i id="theme-switching-btn" class="fi fi-sr-heart"></i>
     </div>
   </header>
 
   <main>
-    <h1 class="month-title"></h1>
-    <label for="months-selection">Select the month</label>
-    <select id="months-selection">
-      <option value="">--select the month--</option>
-      <option value="january">January</option>
-      <option value="february">February</option>
-      <option value="march">March</option>
-      <option value="april">April</option>
-      <option value="may">May</option>
-      <option value="june">June</option>
-      <option value="july">July</option>
-      <option value="augest">Augest</option>
-      <option value="september">September</option>
-      <option value="october">October</option>
-      <option value="november">November</option>
-      <option value="december">December</option>
-    </select>
-
-    <ul id="calender">
-      <!--days adding here-->
-    </ul>
+    <div class="container">
+      <div class="top-content">
+        <div class="left-side-content">
+          <div class="month-title"></div>
+        </div>
+  
+        <div class="right-side-content">
+          <label for="months-selection">Select month</label>
+          <select id="months-selection">
+            <option value="">--select the month--</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="augest">Augest</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+          </select>
+        </div>
+      </div>
+      
+      <ul id="calender">
+        <!--days adding here-->
+      </ul>
+    </div>
   </main>
 
   <script src="calender.js"></script>
